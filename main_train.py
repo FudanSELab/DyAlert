@@ -75,7 +75,6 @@ def train(epochs, lr, loss_method, loss_param=None, slide_window=(10, 8),
         epoch_loss = 0
         epoch_time = time.time()
         total = 0
-        number_of_0 = 0
         for data in dataloader_train:
             optimizer.zero_grad()
             # if there is only one alert on the snapshot, no need to predict links.

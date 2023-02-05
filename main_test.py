@@ -18,7 +18,7 @@ def test_for_test_dataset(slide_window,
                           correlation_method='pearsonr', metric_length='all', gnn_num_layers=2,
                           metric_correlation_threshold=None,
                           model_file='model.pth'):
-    # 日志
+    # log
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
     handler = logging.FileHandler(
@@ -60,7 +60,6 @@ def test_for_test_dataset(slide_window,
             nodes_rel = {}
 
             idx = 0
-            last_node_idx = {}  # alarm_id_fault_level =》idx of alarm_id_fault_level_+first_name(node_idx)
 
             for i, batch_name in enumerate(data['alert'].names):
                 for j, name in enumerate(batch_name):

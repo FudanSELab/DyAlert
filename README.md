@@ -13,6 +13,6 @@ Specifically, we design a discrete-time dynamic graph (namely **A**lert-**M**etr
   - **customized_dataloader.py**: The dataloader implementation for DyAlert.
   - **focal_loss.py**: The implementation of focal loss.
   - **model.py**: The implementation of DyAlert model.
-  - **sliding_dataset.py**: Spliting The implementation of sliding window, to partition the dataset based on the occurrence time of alerts.
+  - **sliding_dataset.py**: The implementation of sliding window, which is used for partitioning the dataset based on the occurrence time of alerts.
 - **main_train.py**: Training the model of DyAlert with generated training pt files.
 - **main_test.py**: Predict links among alerts in testing pt files based on the trained model.

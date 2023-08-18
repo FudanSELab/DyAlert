@@ -6,7 +6,7 @@ Specifically, we design a discrete-time dynamic graph (namely **A**lert-**M**etr
 
 
 ## Repository Organization
-- **data_generator.py**: Generating example json data randomly, whose results do not correspond to the experimental results in our paper.
+- **data_generator.py**: Unfortunately, we cannot make our experiment data publicly available since it is confidential data from a commercial enterprise. To help readers understand our data format, we provide **data_generator.py** for generating example json data randomly, whose results do not correspond to the experimental results in our paper.
 - **heterogeneous_graph_data_construction.py**: Constructing AMDG snapshots based on json files and generating pt files to be fed into model.
 - **model/** contains:
   - **bert.py**: For alert embedding.
